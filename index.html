@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tar Shop</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+
+<body>
+
+  <div class="header">
+    <div class="shopname">
+      <a class="logo" href="index.html">Tar Shop</a>
+    </div>
+    <div class="filter-container">
+      <nav class="filter">
+        <button class="btn all-btn active" data-cat="all" > All </button>
+        <button class="btn Electronics-btn" data-cat="Electronics" > Electronics </button>
+        <button class="btn Clothing-btn"  data-cat="Clothing" > Clothing </button>
+        <button class="btn Accessories-btn" data-cat="Accessories" > Accessories </button>
+      </nav>
+    </div>
+    <div class="navigation">
+      <a href="cart.html">
+        <div class="cart-container">
+          <img class="cart-icon" src="./images/shopping_cart_73dp_5985E1_FILL0_wght400_GRAD0_opsz48.png" />
+          <span class="cart-count">0</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- <div class="nav-mobile hidden">
+    <div class="header-container">
+      <div class="logo">Tar Shop</div>
+      <div class="cart-container">
+        <img class="cart-icon" src="./images/shopping_cart_73dp_5985E1_FILL0_wght400_GRAD0_opsz48.png" />
+        <span class="cart-count">0</span>
+      </div>
+      <img class="menu-icon" src="./images/menu_47dp_5985E1_FILL0_wght400_GRAD0_opsz48.png" alt="menu icon"
+        onclick="toggleMenu()" />
+    </div>
+    <div class="myLinks">
+      <a href="index.html">Home Page</a>
+      <a href="cart.html">Cart</a>
+    </div>
+  </div> -->
+
+  <div class="products-container">
+    <div class="product" data-cat="${product.category}">
+
+    </div>
+  </div>
+
+
+  <footer class="footer">
+    <h4 class="footer-text">© 2024 Tar Shop</h4>
+  </footer>
+
+  
+  <script type="module" src="./index.js"></script>
+  <script type="module" src="./cart.js"></script>
+  <script type="module" src="./products.js"></script>
+
+  <script>
+
+    // displayProducts(products);
+
+    // function toggleMenu() {
+    //   const links = document.querySelector(".myLinks");
+    //   links.classList.toggle("show");
+    // }
+
+  </script>
+
+</body>
+
+</html>
